@@ -1,0 +1,49 @@
+:root {
+    --deep-blue: #002366;
+    --cyan: #00e5ff;
+    --white: #ffffff;
+    --light-gray: #f4f7f9;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #333; background: var(--white); }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+/* Navigation */
+nav { background: var(--white); padding: 20px 0; border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 100; }
+.nav-content { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-weight: 700; color: var(--deep-blue); font-size: 1.2rem; letter-spacing: 1px; }
+.logo span { font-weight: 400; border-left: 1px solid #ccc; margin-left: 10px; padding-left: 10px; }
+nav ul { display: flex; list-style: none; }
+nav ul li { margin-left: 30px; }
+nav ul li a { text-decoration: none; color: var(--deep-blue); font-weight: 500; font-size: 0.9rem; }
+
+/* Hero */
+.hero { padding: 100px 0; background: var(--light-gray); text-align: center; }
+h1 { font-size: 3rem; color: var(--deep-blue); margin-bottom: 20px; }
+.highlight { color: var(--cyan); }
+.hero p { font-size: 1.2rem; margin-bottom: 40px; color: #666; }
+
+/* Buttons */
+.btn { padding: 12px 25px; border-radius: 4px; text-decoration: none; font-weight: 600; display: inline-block; transition: 0.3s; }
+.primary { background: var(--deep-blue); color: white; margin-right: 15px; }
+.secondary { background: var(--cyan); color: var(--deep-blue); }
+.btn:hover { opacity: 0.8; transform: translateY(-2px); }
+
+/* Grid */
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+.card { border: 1px solid #eee; padding: 20px; border-radius: 8px; transition: 0.3s; }
+.card:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+.card-img { height: 200px; margin-bottom: 15px; border-radius: 4px; }
+.btn-link { color: var(--cyan); text-decoration: none; font-weight: 700; display: block; margin-top: 15px; }
+
+/* Sections */
+section { padding: 80px 0; }
+h2 { font-size: 2rem; color: var(--deep-blue); text-align: center; }
+.section-sub { text-align: center; color: #888; margin-top: 10px; }
+
+.dark-section { background: var(--deep-blue); color: white; }
+.dark-section h2 { color: white; }
+.feature-grid { display: flex; justify-content: space-around; margin-top: 50px; text-align: center; }
+
+footer { padding: 50px 0; text-align: center; border-top: 1px solid #eee; font-size: 0.9rem; }
