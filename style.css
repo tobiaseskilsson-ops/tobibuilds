@@ -40,17 +40,58 @@ nav ul { display: flex; list-style: none; }
 nav ul li { margin-left: 30px; }
 nav ul li a { text-decoration: none; color: var(--deep-blue); font-weight: 500; font-size: 0.9rem; }
 
-/* Hero */
-.hero { padding: 100px 0; background: var(--light-gray); text-align: center; }
-h1 { font-size: 3rem; color: var(--deep-blue); margin-bottom: 20px; }
-.highlight { color: var(--cyan); }
-.hero p { font-size: 1.2rem; margin-bottom: 40px; color: #666; }
+/* Hero Section - Inverterad till Blå */
+.hero { 
+    padding: 100px 0; 
+    background: var(--deep-blue); 
+    text-align: center; 
+    color: var(--white); 
+}
 
-/* Buttons */
-.btn { padding: 12px 25px; border-radius: 4px; text-decoration: none; font-weight: 600; display: inline-block; transition: 0.3s; }
-.primary { background: var(--deep-blue); color: white; margin-right: 15px; }
-.secondary { background: var(--cyan); color: var(--deep-blue); }
-.btn:hover { opacity: 0.8; transform: translateY(-2px); }
+.hero h1 { 
+    font-size: 3rem; 
+    color: var(--white); 
+    margin-bottom: 20px; 
+}
+
+.hero .highlight { 
+    color: var(--cyan); 
+}
+
+.hero p { 
+    font-size: 1.2rem; 
+    margin-bottom: 40px; 
+    color: rgba(255, 255, 255, 0.8); 
+}
+
+/* Uppdaterade knappar för bättre kontrast mot blått */
+.btn { 
+    padding: 12px 25px; 
+    border-radius: 4px; 
+    text-decoration: none; 
+    font-weight: 600; 
+    display: inline-block; 
+    transition: 0.3s; 
+    border: none;
+    cursor: pointer;
+}
+
+.primary { 
+    background: var(--cyan); 
+    color: var(--deep-blue); 
+    margin-right: 15px; 
+}
+
+.secondary { 
+    background: var(--white); 
+    color: var(--deep-blue); 
+}
+
+.btn:hover { 
+    opacity: 0.9; 
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
 
 /* Grid */
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
