@@ -30,7 +30,7 @@ nav {
     align-items: center; 
 }
 .logo-img img { 
-    height: 50px; /* Ändra här om du vill ha loggan större/mindre */
+    height: 70px; /* Ändra här om du vill ha loggan större/mindre */
     width: auto; 
     display: block; 
 }
